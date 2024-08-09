@@ -1,0 +1,15 @@
+{% set title = "Template Sample" %}
+{% set subTitle = "メインメニュー" %}
+{% extends 'layouts/layout.html' %}
+
+{% block head %}{% endblock %}
+{% block header %}
+    <h1>{{title}} - {{subTitle}}</h1>
+{% endblock %}
+{% block contents %}
+    <h2>メインコンテンツ</h2>
+    <p>メッセージを書いています。</p>
+{% endblock %}
+{% block footer %}
+    コピーライト
+{% endblock %}
