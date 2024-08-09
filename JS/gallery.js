@@ -1,4 +1,6 @@
-//lightbox オプションの設定※https://lokeshdhakar.com/projects/lightbox2/#options参照
+
+
+//lightbox オプションの設定※https://lokeshdhakar.com/projects/lightbox2/#options
 
 lightbox.option({
     'wrapAround': true,//グループ最後の写真の矢印をクリックしたらグループ最初の写真に戻る
