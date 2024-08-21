@@ -3,13 +3,13 @@ $(window).on('load',function(){	//画面遷移時にギャラリーの画像が�
   //＝＝＝Muuriギャラリープラグイン設定
   var grid = new Muuri('.grid', {
   
-  //アイテムの表示速度※オプション。入れなくても動作します
+  //アイテムの表示速度※オプション。入れなくても動作
   showDuration: 600,
   showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
   hideDuration: 600,
   hideEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
     
-  // アイテムの表示/非表示状態のスタイル※オプション。入れなくても動作します
+  // アイテムの表示/非表示状態のスタイル※オプション。入れなくても動作
     visibleStyles: {
       opacity: '1',
       transform: 'scale(1)'
@@ -36,7 +36,7 @@ $(window).on('load',function(){	//画面遷移時にギャラリーの画像が�
   //＝＝＝ Fancyboxの設定
   $('[data-fancybox]').fancybox({
    thumbs: {
-      autoStart: true, //グループのサムネイル一覧をデフォルトで出す。不必要であればfalseに
+      autoStart: true, //グループのサムネイル一覧をデフォルトで出す。不必要であればfalse
     },	
   });
     
