@@ -39,6 +39,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
             rel="stylesheet">
+
+      <!-- TOPに戻るクエリ -->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 
@@ -64,6 +67,8 @@
                               <h1 class="vollkorn">Aya Design Creative</h1>
                         </a>
                         <h2 class="vollkorn">Aya NAKAMURA's Portfolio.</h2>
+
+                        <!-- <div class="about"><a href="./pages/about.html">About Me</a></div> -->
                   </header>
 
                   <main>
@@ -261,7 +266,26 @@
       </div>
 
 
-
+      <!-- TOPに戻るボタン -->
+      <p class="pagetop"><a href="#container">▲</a></p>
+      <!-- クエリここから -->
+      <script>
+            $(document).ready(function () {
+                  var pagetop = $('.pagetop');
+                  $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                              pagetop.fadeIn();
+                        } else {
+                              pagetop.fadeOut();
+                        }
+                  });
+                  pagetop.click(function () {
+                        $('body, html').animate({ scrollTop: 0 }, 500);
+                        return false;
+                  });
+            });
+      </script>
+      <!-- クエリここまで -->
 
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
