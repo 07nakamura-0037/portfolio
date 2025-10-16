@@ -251,19 +251,19 @@ p {
   font-size: 12px;
   text-decoration: none;
   padding: 5px 10px;
-filter:alpha(opacity=50);
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+filter:alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 .pagetop a:hover {
   display: block;
-  background-color: #b2d1fb;
+  background-color: #617da7;
   text-align: center;
   color: #fff;
   font-size: 12px;
   text-decoration: none;
   padding:5px 10px;
-filter:alpha(opacity=50);
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+filter:alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
